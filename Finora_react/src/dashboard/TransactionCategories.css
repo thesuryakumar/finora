@@ -1,0 +1,148 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background-color: #0f1b2b;
+  color: white;
+}
+
+.transaction-categories-dashboard {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 260px;
+  background: #1a2a3d;
+  padding: 20px;
+}
+
+.logo {
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+}
+
+.menu li {
+  margin: 8px 0;
+  cursor: pointer;
+}
+
+.menu .active {
+  background: #c47233;
+  padding: 6px 10px;
+  border-radius: 4px;
+}
+
+.section-title {
+  margin-top: 15px;
+  font-size: 12px;
+  color: #aaa;
+}
+
+/* Main Content */
+.main-content {
+  flex: 1;
+  background: #0f1b2b;
+  padding: 20px;
+}
+
+.transaction-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.tab {
+  background: #2a3b52;
+  border: none;
+  padding: 8px 16px;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.tab.active {
+  background: #c47233;
+}
+
+.add-btn,
+.refresh-btn,
+.default-btn {
+  background: #c47233;
+  border: none;
+  padding: 8px 12px;
+  margin-left: 10px;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+}
+
+.transaction-body {
+  margin-top: 20px;
+}
+
+.section-sub {
+  color: orange;
+  font-weight: bold;
+}
+
+/* Category list with bar visualization */
+.category-list {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.category-box {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.category-box p {
+  margin: 0;
+  font-weight: 500;
+  text-align: left;
+}
+
+.bar-container {
+  width: 100%;
+  height: 20px;
+  background-color: #2a3b52;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.bar-fill {
+  height: 100%;
+  border-radius: 10px;
+  transition: width 0.5s ease;
+}
+
+.amount {
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-align: right;
+  margin-top: 2px;
+}
+
+/* Optional: show tooltip on hover */
+.bar-container:hover::after {
+  content: attr(data-amount);
+  position: absolute;
+  right: 0;
+  top: -22px;
+  background: #c47233;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  color: #fff;
+}

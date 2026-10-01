@@ -1,0 +1,193 @@
+.statistics-analysis {
+  display: flex;
+  min-height: 100vh;
+  background: #0f1b2b; /* dark navy background */
+  color: #fff;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 260px;
+  background: linear-gradient(180deg, #1a2a3d, #0f1b2b);
+  padding: 20px;
+  color: #fff;
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.logo-img {
+  width: 50px;
+  margin-right: 10px;
+}
+
+.logo-text {
+  font-size: 22px;
+  font-weight: bold;
+  background: linear-gradient(90deg, #f8b500, #1e90ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.sidebar h4 {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #aaa;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+.sidebar li {
+  padding: 8px 10px;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+.sidebar li:hover,
+.sidebar li.active {
+  background: linear-gradient(90deg, #f8b500, #1e90ff);
+  color: #fff;
+}
+
+/* Main */
+.main {
+  flex: 1;
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-controls {
+  display: flex;
+  gap: 10px;
+}
+
+.search-input {
+  padding: 6px 12px;
+  border: 1px solid #333;
+  border-radius: 6px;
+  background: #162233;
+  color: #fff;
+}
+
+/* Tabs */
+.tabs {
+  display: flex;
+  gap: 10px;
+  margin: 15px 0;
+}
+
+.tab {
+  padding: 8px 15px;
+  border: none;
+  background: #162233;
+  cursor: pointer;
+  border-radius: 6px;
+  color: #fff;
+}
+
+.tab.active {
+  background: linear-gradient(90deg, #f8b500, #1e90ff);
+  font-weight: bold;
+}
+
+/* Cards */
+.card {
+  background: #162233;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card.large {
+  margin-top: 20px;
+}
+
+/* Chart */
+.chart-options {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.chart-options label {
+  font-size: 14px;
+}
+
+.chart-options select {
+  padding: 5px;
+  border-radius: 6px;
+  border: 1px solid #444;
+  background: #162233;
+  color: #fff;
+}
+
+.chart-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.chart-image {
+  max-width: 350px;
+}
+
+/* Buttons */
+button {
+  margin-top: 10px;
+  background: #1e90ff;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #f8b500;
+}
+.chart-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px; /* fixed height for chart */
+}
+/* Month Input */
+.month-input {
+  background: #1a2a3d;
+  border: 1px solid #36a2eb;
+  color: #36a2eb;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+  transition: 0.3s ease;
+}
+
+.month-input:hover,
+.month-input:focus {
+  background: #0f1b2b;
+  border-color: #4bc0c0;
+  color: #4bc0c0;
+}

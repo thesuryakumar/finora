@@ -1,0 +1,143 @@
+/* Paste your CSS here */
+/* Full viewport with background image */
+body, html, #root {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('https://media.istockphoto.com/id/1503371245/photo/percentage-sign-on-top-of-coin-stacks-before-blue-financial-graph.jpg?s=612x612&w=0&k=20&c=T9YGg7XIZTG_8E2h1xsTaQkdLGCTjkX_rnMr0adtAQk='), 
+                    linear-gradient(135deg, #0a192f, #112d4e);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 10px;
+}
+
+/* Logo */
+.logo {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto 20px;
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.5);
+}
+
+/* Glassmorphism container */
+.login-container {
+  width: 90%;
+  max-width: 400px;
+  padding: 35px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  box-sizing: border-box;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Title */
+h2 {
+  color: #3a86ff;
+  margin-bottom: 20px;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+/* Form styling */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #3a86ff;
+  border-radius: 8px;
+  font-size: 15px;
+  background-color: rgba(255, 255, 255, 0.85);
+  color: #000;
+  box-sizing: border-box;
+  font-weight: bold;
+}
+
+.button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+  background: linear-gradient(135deg, #fcbf49, #3a86ff);
+  color: #fff;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 4px 15px rgba(58, 134, 255, 0.4);
+}
+
+/* Links */
+.link {
+  color: #3a86ff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.link:hover {
+  color: #fcbf49;
+  text-decoration: underline;
+}
+
+p {
+  color: #eee;
+  margin-top: 15px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .login-container {
+    padding: 25px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  .input, .button {
+    padding: 10px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .login-container {
+    padding: 18px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  .input, .button {
+    padding: 9px;
+    font-size: 13px;
+  }
+
+  p {
+    font-size: 12px;
+  }
+}
